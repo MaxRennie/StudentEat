@@ -9,9 +9,12 @@
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^5.1.1",
     "grunt": "^1.4.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
     "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
     "node-sass": "^6.0.1"
   }
 }
