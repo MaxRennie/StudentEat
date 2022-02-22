@@ -23,6 +23,33 @@ if ($_POST) {
             $attempt = $User->createUser($_POST);
             if ($attempt) {
                 $smarty->assign('success', "Your account has been created. Please now login.");
+                // $to = $_POST['email'];
+                // $subject = 'Welcome to StudentEat!';
+                // $headers = "From: max.rennie@uos.ac.uk\r\n";
+                // $headers .= "Reply-To: max.rennie@uos.ac.uk\r\n";
+                // $headers .= "MIME-Version: 1.0\r\n";
+                // $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+                // $message = '<html><body>';
+                // $message .= '<h1>Welcome to StudentEat!</h1>';
+                // $message .= '<p>You have successfully registered an account with us.</p>';
+                // $message .= '</body></html>';
+
+                //mail($to, $subject, $message, $headers);
+
+                $email = new \SendGrid\Mail\Mail();
+                $email->setFrom("max.rennie@uos.ac.uk", "Max Rennie");
+                $email->setSubject("Welcome to StudentEat");
+                $email->addTo($_POST['email'], "User");
+                $email->addContent(
+                    "text/html",
+                    "<h1>Welcome to StudentEat!</h1>"
+                );
+
+                $sendgrid = new \SendGrid('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');
+
+                $response = $sendgrid->send($email);
+                
             } else {
                 $smarty->assign('error', "An error occured, please try again later.");
             }

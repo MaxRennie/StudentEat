@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'BaseSendGridClientInterface' => $vendorDir . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'SendGrid' => $vendorDir . '/sendgrid/sendgrid/lib/SendGrid.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',
     'SmartyCompilerException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
     'SmartyException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartyexception.php',
@@ -176,4 +178,5 @@ return array(
     'Smarty_Variable' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
     'TPC_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
     'TP_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
+    'TwilioEmail' => $vendorDir . '/sendgrid/sendgrid/lib/TwilioEmail.php',
 );

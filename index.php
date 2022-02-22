@@ -11,7 +11,7 @@ if ($_GET['p']) {
     require_once('controllers/' . $_GET['p'] . '.php');
     $smarty->display('pages/' . $_GET['p'] . '.tpl');
     /* secure pages array*/
-    $secure_pages = array('account');
+    $secure_pages = array('account', 'changepassword');
     if (in_array($_GET['p'], $secure_pages)) {
         if(!$_SESSION['is_loggedin']) {
             header("Location: index.php?p=login");
