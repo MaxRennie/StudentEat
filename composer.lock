@@ -72,16 +72,16 @@
         },
         {
             "name": "sendgrid/sendgrid",
-            "version": "7.11.4",
+            "version": "7.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/sendgrid-php.git",
-                "reference": "97a509b53ced9d29dde401e3b2c0c55f9ab03f5c"
+                "reference": "1d2fd3b72687fe82264853a8888b014f8f99e81f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/97a509b53ced9d29dde401e3b2c0c55f9ab03f5c",
-                "reference": "97a509b53ced9d29dde401e3b2c0c55f9ab03f5c",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/1d2fd3b72687fe82264853a8888b014f8f99e81f",
+                "reference": "1d2fd3b72687fe82264853a8888b014f8f99e81f",
                 "shasum": ""
             },
             "require": {
@@ -131,9 +131,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sendgrid/sendgrid-php/issues",
-                "source": "https://github.com/sendgrid/sendgrid-php/tree/7.11.4"
+                "source": "https://github.com/sendgrid/sendgrid-php/tree/7.11.5"
             },
-            "time": "2022-02-09T22:49:28+00:00"
+            "time": "2022-03-09T20:21:56+00:00"
         },
         {
             "name": "smarty/smarty",
