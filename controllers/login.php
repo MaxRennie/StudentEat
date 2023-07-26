@@ -46,7 +46,7 @@ if ($_POST) {
                     "<h1>Welcome to StudentEat!</h1>"
                 );
 
-                $sendgrid = new \SendGrid('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');
+
 
                 $response = $sendgrid->send($email);
                 
